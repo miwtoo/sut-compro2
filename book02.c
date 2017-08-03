@@ -2,7 +2,7 @@
 
 int main() {
 
-  int n,i,count = 0,sum;
+  int n,i,count = 0,sum = 0;
 
   do {
     printf("Please enter number (10-99) : ");
