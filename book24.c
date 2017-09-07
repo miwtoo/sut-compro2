@@ -4,7 +4,7 @@
 char get_input(){
   char az;
   do {
-    printf("Please enter a character (a-z): ");
+    printf("Please enter a character (A-Z): ");
     //__fpurge(stdin);
     scanf(" %c", &az);
   } while(az < 'A'  || az > 'Z');
