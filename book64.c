@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main() {
   int n, count = 0, size, i, j;
+  char vowels[] = "aeiouAEIOU";
   size = sizeof(vowels)/sizeof(char);
 
   do {
@@ -31,7 +32,7 @@ int main() {
   for (i = 0; i < n; i++) {
     for (j = 0; j < size ; j++) {
       if(*(pc+i) == vowels[j]){
-        printf("%c ", c[i]);
+        printf("%c ", *(pc+i));
         count++;
       }
     }
