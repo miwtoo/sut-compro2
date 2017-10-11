@@ -24,10 +24,8 @@ int main() {
     __fpurge(stdin);
     printf("Product Name: ");
     scanf("%s", &order[i].name);
-    __fpurge(stdin);
     printf("Price: ");
     scanf("%f", &order[i].price);
-    __fpurge(stdin);
     printf("Qty: ");
     scanf("%d", &order[i].qty);
 
