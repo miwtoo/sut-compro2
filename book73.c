@@ -12,10 +12,10 @@ int main() {
   float sum = 0,avg;
   while (i < a) {
     printf("Enter number %d (1-50):",i+1);
-    scanf("%d", pn+i);
-    if(*(pn+i) < 1 || *(pn+i) > 50)
+    scanf("%d", pn);
+    if(*pn < 1 || *pn > 50)
       continue;
-    sum = sum + *(pn+i);
+    sum = sum + *pn;
     pn++;
     i++;
   }
