@@ -14,10 +14,12 @@ int main() {
   FILE *fp;
   fp = fopen("mydata.dat","r");
   printf("%-5s%-20s%-10s%-10s%10s\n","No","Name","Gender","Age","Salary" );
-  do {
+  while (1){
     e = fread(&s,sizeof(s),1,fp);
+    if(e != 1)
+      break;
     printf("%-5d%-20s%-10c%-10d%10.2f\n",i++,s.name,toupper(s.gender),s.age,s.salary);
-  }while (e == 1);
+  };
 
   fclose(fp);
   return 0;
