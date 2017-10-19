@@ -19,8 +19,6 @@ int main() {
     printf("Intput salary: ");
     scanf("%f", &s.salary);
 
-    //printf("\n%s\n%c\n%d\n%f\n", s.name,s.gender,s.age,s.salary);
-
     FILE *fp;
     fp = fopen("mydata.txt","a");
     fprintf(fp, "%-20s%-5c%-10d%-.2f\n",s.name,toupper(s.gender) ,s.age,s.salary);
