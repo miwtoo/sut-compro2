@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 int main() {
   typedef struct {
       char name[20];
@@ -18,7 +17,7 @@ int main() {
     e = fread(&s,sizeof(s),1,fp);
     if(e != 1)
       break;
-    printf("%-5d%-20s%-10c%-10d%10.2f\n",i++,s.name,toupper(s.gender),s.age,s.salary);
+    printf("%-5d%-20s%-10c%-10d%10.2f\n",i++,s.name,s.gender,s.age,s.salary);
   };
 
   fclose(fp);

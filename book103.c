@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 int main() {
   typedef struct {
       char name[20];
@@ -13,6 +14,7 @@ int main() {
   scanf("%s", &s.name);
   printf("Intput gender: ");
   scanf(" %c", &s.gender);
+  s.gender = toupper(s.gender);
   printf("Intput age: ");
   scanf("%d", &s.age);
   printf("Intput salary: ");
