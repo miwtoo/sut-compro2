@@ -7,8 +7,7 @@ int main() {
   do {
     printf("How many data? (1-10) : ");
     scanf("%d", &n);
-  }while(n < 1 || n >
-          10);
+  }while(n < 1 || n > 10);
 
   printf("Input data..\n");
 
